@@ -2,10 +2,11 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: cl.exe build active file",
+            "label": "Build with MSVC",
             "command": "cl.exe",
             "args": [
                 "/Zi",
+                "/std;c++latest",
                 "/EHsc",
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
